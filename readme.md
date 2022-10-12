@@ -9,18 +9,18 @@ Create a function in C that reads each line of a file (substring until character
 
 - Allowed standard functions in C: read, malloc, free
 	* read
-		include <unistd.h>
-		ssize_t read(int fd, void *buf, size_t count)
-			function attempts to read up to count bytes from file descriptor fd into the buffer starting at buf.
-			function returns the number of bytes read, ZERO if EOF is reached, or -1 if an error occurs
+		- include <unistd.h>
+		- ssize_t read(int fd, void *buf, size_t count)
+			- function attempts to read up to count bytes from file descriptor fd into the buffer starting at buf.
+			- function returns the number of bytes read, ZERO if EOF is reached, or -1 if an error occurs
 	* malloc
-		include <stdlib.h>
-		void *malloc(size_t size)
-			function allocates a number equal to 'size' in memory heap for variables
+		- include <stdlib.h>
+		- void *malloc(size_t size)
+			- function allocates a number equal to 'size' in memory heap for variables
 	* free
-		include <stdlib.h>
-		void free(void *ptr)
-			function frees the memory space pointed by 'ptr' and previously allocated by malloc/calloc
+		- include <stdlib.h>
+		- void free(void *ptr)
+			- function frees the memory space pointed by 'ptr' and previously allocated by malloc/calloc
 
 - All files must follow 42 norm
 

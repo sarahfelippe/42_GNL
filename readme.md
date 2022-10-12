@@ -1,8 +1,8 @@
-1. Deliverable
+# Deliverable
 
 Create a function in C that reads each line of a file (substring until character '\n'), returns the line it has just read and goes to the next line of the file
 
-2. Constrains of the project
+# Constrains of the project
 
 - Turn-in files [mandatory]: get_next_line.c, get_next_line_utils.c, get_next_line.h
 - Turn-in files [bonus]: get_next_line_bonus.c, get_next_line_utils_bonus.c, get_next_line_bonus.h
@@ -30,9 +30,9 @@ Create a function in C that reads each line of a file (substring until character
 
 - Function must read each line of a file regardless of BUFFER_SIZE determined during compilation (cc -Wall -Wextra -Werror -D BUFFER_SIZE=XX *.c)
 
-3. Types of scenarios
+# Types of scenarios
 
-# Scenario 1
+Scenario 1
 
 IF
 - File is empty; or
@@ -45,7 +45,7 @@ IF
 EXPECTED BEHAVIOUR
 - Function must return NULL
 
-# Scenario 2.1
+Scenario 2.1
 
 IF
 - File is not empty; and
@@ -56,7 +56,7 @@ IF
 EXPECTED BEHAVIOUR
 - Function must iterate line (string) until EOF
 
-# Scenario 2.2
+Scenario 2.2
 
 IF
 - File is not empty; and
@@ -68,7 +68,7 @@ EXPECTED BEHAVIOUR
 - Function must iterate string until BUFFER-SIZE and call read function again until it reaches EOF
 - Piece of line read before BUFFER_SIZE must be saved in a temporary string to be later concatenated/joined to the rest of line until EOF
 
-# Scenario 3.1
+Scenario 3.1
 
 IF
 - File is not empty; and
@@ -80,7 +80,7 @@ EXPECTED BEHAVIOUR
 - Function must iterate line (string) until character '\n', concatenated/join the current piece of line read with previous ones
 - Function must return the joined/concatenated string
 
-# Scenario 3.2
+Scenario 3.2
 
 IF
 - File is not empty; and
@@ -92,7 +92,7 @@ EXPECTED BEHAVIOUR
 - Function must iterate string until BUFFER-SIZE and call read function again until it reaches EOF or character '\n'
 - Piece of line read before BUFFER_SIZE must be saved in a temporary string to be later concatenated/joined to the rest of line until EOF or '\n'
 
-4. Function logic
+# Function logic
 
 - If any scenario described in 1 happens, 'get_next_line' must return NULL
 - Line is read during the lenght of BUFFER_SIZE and read piece must be saved in a static string until EOF or '\n' are found. While EOF or '\n' are not found, all pieces read must be concatenated/joined in the static string
